@@ -1,0 +1,115 @@
+body {
+    background: #F0F0F0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    background: #006666;
+    color: #F0F0F0;
+    padding: 1.5rem 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.brand a {
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #00EEEE;
+}
+
+main section {
+    padding: 5px 10px;
+}
+
+main section:nth-child(2n) {
+    background: #DDDDDD;
+}
+
+.titulo {
+    font-size: 1.5rem;
+    color: #006666;
+    padding: 10px 0 15px 0;
+}
+
+.sobre {
+    font-size: 1.25rem;
+    color: #333333;
+    font-style: italic;
+}
+
+.lista-complexa li {
+    margin-bottom: 30px;
+}
+
+.lista-complexa li > p, .lista-complexa li > h3 {
+    margin-bottom: 10px;
+}
+
+.detalhe {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #666666;
+}
+
+.nome {
+    font-size: 1.25rem;
+}
+
+.descricao {
+    text-align: justify;
+}
+
+footer {
+    background: #009999;
+}
+
+.container-footer {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista-cursos li {
+    list-style-type: square;
+    margin: 0 0 3px 25px;
+}
+
+/* footer */
+
+.copyright {
+    font-weight: bold;
+    color: #CCCCCC;
+}
+
+.redes-sociais li {
+    display: inline;
+}
+
+.redes-sociais li a {
+    text-decoration: none;
+    margin: 0 0 0 15px;
+}
