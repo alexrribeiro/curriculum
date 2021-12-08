@@ -117,7 +117,7 @@ main section:nth-child(2n) {
     font-weight: 600;
 }
 
-.curriculo {
+.botao {
     background: #006666;
     color: #EEEEEE;
     text-decoration: none;
@@ -131,7 +131,7 @@ main section:nth-child(2n) {
     transition: 0.3s;
 }
 
-.curriculo:hover {
+.botao:hover {
     background: #003333;
 }
 
