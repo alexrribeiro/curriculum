@@ -1,3 +1,5 @@
+/* Layout */
+
 body {
     background: #F0F0F0;
     font-family: 'Source Sans Pro', sans-serif;
@@ -9,10 +11,17 @@ header {
     padding: 1.5rem 0;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 .container {
     width: 1200px;
     margin: 0 auto;
 }
+
+/* Header */
 
 .brand {
     font-size: 1.5rem;
@@ -24,11 +33,6 @@ header {
     color: #EEEEEE;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
 .menu li {
 	display: inline;
 	margin: 0 0 0 15px;
@@ -38,6 +42,8 @@ nav {
     text-decoration: none;
     color: #00EEEE;
 }
+
+/* Main */
 
 main section {
     padding: 5px 10px;
@@ -86,6 +92,17 @@ main section:nth-child(2n) {
     text-align: justify;
 }
 
+.lista-cursos li {
+    list-style-type: square;
+    margin: 0 0 3px 20px;
+}
+
+.periodo {
+    font-weight: 600;
+}
+
+/* Footer */
+
 footer {
     background: #009999;
 }
@@ -97,17 +114,6 @@ footer {
     display: flex;
     justify-content: space-between;
 }
-
-.lista-cursos li {
-    list-style-type: square;
-    margin: 0 0 3px 25px;
-}
-
-.periodo {
-    font-weight: 600;
-}
-
-/* footer */
 
 .copyright {
     font-weight: bold;
