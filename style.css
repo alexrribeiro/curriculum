@@ -59,8 +59,13 @@ main section:nth-child(2n) {
     font-style: italic;
 }
 
+.lista-complexa {
+    border-left: 3px solid #009999;
+}
+
 .lista-complexa li {
     margin-bottom: 30px;
+    padding-left: 16px;
 }
 
 .lista-complexa li > p, .lista-complexa li > h3 {
@@ -96,6 +101,10 @@ footer {
 .lista-cursos li {
     list-style-type: square;
     margin: 0 0 3px 25px;
+}
+
+.periodo {
+    font-weight: 600;
 }
 
 /* footer */
