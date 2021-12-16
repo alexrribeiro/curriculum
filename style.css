@@ -8,12 +8,17 @@ body {
 header {
     background: #006666;
     color: #F0F0F0;
-    padding: 1.5rem 0;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    /* padding: 1.5rem 0; */
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    top: 3vh;
 }
 
 .container {
@@ -48,14 +53,11 @@ nav {
 main section {
     padding: 25px 10px;
     clear: left;
+    min-height: 80vh;
 }
 
 main section:nth-child(2n) {
     background: #DDDDDD;
-}
-
-#inicio {
-    height: 300px;
 }
 
 .mim {
@@ -115,6 +117,24 @@ main section:nth-child(2n) {
 
 .periodo {
     font-weight: 600;
+}
+
+.como-encontrar {
+    border: 1px solid #009999;
+    border-radius: 5px;
+}
+
+.como-encontrar li {
+    margin: 8px 0;
+    padding: 8px;
+}
+
+.como-encontrar li > p, .como-encontrar li > h3 {
+    margin-bottom: 6px;
+}
+
+.texto {
+    margin-top: 18px;
 }
 
 .botao {
