@@ -1,0 +1,64 @@
+:root {
+    --cor-principal-escura: #103D4F;
+    --cor-principal-media: #207A9E;
+    --cor-principal-clara: #B0D8E8;
+    --cor-principal-alternativa: #29A0CF;
+
+    --cor-neutra-escura: #202020;
+    --cor-neutra-media: #808080;
+    --cor-neutra-clara: #F0F0F0;
+    --cor-neutra-alternativa: #565656;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-neutra-clara);
+    color: var(--cor-neutra-escura);
+}
+
+.cabecalho {
+    background-color: var(--cor-principal-media);
+}
+
+.cabecalho-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+.cabecalho-marca {
+    font-size: 2rem;
+}
+
+.cabecalho-marca-link {
+    color: var(--cor-neutra-clara);
+    text-decoration: none;
+}
+
+.cabecalho-menu {
+    /* padding: 1rem; */
+}
+
+.cabecalho-menu-lista {
+    display: flex;
+}
+
+.cabecalho-menu-link {
+    color: var(--cor-principal-clara);
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    transition: 0.5s;
+}
+
+.cabecalho-menu-link:hover {
+    color: var(--cor-principal-alternativa);
+    background-color: var(--cor-principal-escura);
+}
