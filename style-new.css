@@ -52,9 +52,9 @@ body {
     color: var(--cor-principal-clara)
 }
 
-.cabecalho-menu {
-    /* padding: 1rem; */
-}
+/* .cabecalho-menu {
+    padding: 1rem;
+} */
 
 .cabecalho-menu-lista {
     display: flex;
@@ -128,14 +128,15 @@ body {
     font-style: italic;
 }
 
-.secao-formacao {
+.secao-formacao, .secao-cursos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-gap: 0.5rem;
 }
 
-.secao-formacao .secao-titulo {
+.secao-formacao .secao-titulo,
+.secao-cursos .secao-titulo {
     grid-column: span 4;
 }
 
@@ -157,4 +158,10 @@ body {
     font-size: 1.125rem;
     font-weight: 600;
     padding-bottom: 1rem;
+}
+
+.cartao-texto {
+    padding-bottom: 0.75rem;
+    text-align: justify;
+    line-height: 1.2rem;
 }
