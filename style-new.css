@@ -88,6 +88,10 @@ body {
     padding-right: 8rem;
 }
 
+.secao:last-child {
+    background-color: var(--cor-principal-clara);
+}
+
 .secao-titulo {
     color: var(--cor-principal-media-sec);
     font-size: 1.5rem;
@@ -128,7 +132,7 @@ body {
     font-style: italic;
 }
 
-.secao-formacao, .secao-cursos {
+.secao-formacao, .secao-cursos, .secao-experiencia {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -136,7 +140,8 @@ body {
 }
 
 .secao-formacao .secao-titulo,
-.secao-cursos .secao-titulo {
+.secao-cursos .secao-titulo, 
+.secao-experiencia .secao-titulo {
     grid-column: span 4;
 }
 
@@ -164,4 +169,13 @@ body {
     padding-bottom: 0.75rem;
     text-align: justify;
     line-height: 1.2rem;
+}
+
+.cartao-info {
+    font-weight: 600;
+    color: var(--cor-neutra-alternativa);
+}
+
+.rodape {
+    background-color: var(--cor-principal-media-sec);
 }
