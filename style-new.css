@@ -78,6 +78,7 @@ body {
     min-height: calc(100vh - 64px);
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-top: 5rem;
 }
 
 .secao:first-child {
@@ -86,6 +87,7 @@ body {
     align-items: center;
     padding-left: 8rem;
     padding-right: 8rem;
+    margin-top: 0;
 }
 
 .secao:last-child {
@@ -100,10 +102,18 @@ body {
     font-weight: 600;
 }
 
+.secao-subtitulo {
+    color: var(--cor-neutra-media);
+    font-size: 1.25rem;
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+    font-weight: 600;
+}
+
 .secao-inicio {
     display: grid;
     grid-template-columns: 2;
-    grid-gap: 3rem;
+    gap: 3rem;
     align-items: center;
 }
 
@@ -111,6 +121,7 @@ body {
     width: 360px;
     height: 360px;
     background-color: lime;
+    opacity: 50%;
     border-radius: 50%;
 }
 
@@ -136,13 +147,33 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
-    grid-gap: 0.5rem;
+    gap: 0.5rem;
 }
 
-.secao-formacao .secao-titulo,
-.secao-cursos .secao-titulo, 
-.secao-experiencia .secao-titulo {
+.secao-exemplos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 0.5rem;
+}
+
+.secao-contato {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.secao-titulo,
+.secao-descricao,
+.secao-subtitulo {
     grid-column: span 4;
+}
+
+.secao-descricao {
+    font-size: 1.125rem;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.5rem;
 }
 
 .cartao {
@@ -176,6 +207,36 @@ body {
     color: var(--cor-neutra-alternativa);
 }
 
+.cartao-botao {
+    background-color: var(--cor-principal-media);
+    color: var(--cor-neutra-clara);
+    text-decoration: none;
+    font-size: 1.125rem;
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    transition: 0.5s;
+}
+
+.cartao-botao:hover {
+    background-color: var(--cor-principal-media-sec);
+}
+
+.embreve {
+    background-color: var(--cor-neutra-media);
+    color: var(--cor-neutra-clara);
+    font-size: 0.75rem;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}
+
 .rodape {
     background-color: var(--cor-principal-media-sec);
+}
+
+.rodape-conteudo {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
 }
