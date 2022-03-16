@@ -193,13 +193,18 @@ body {
     color: var(--cor-neutra-media);
     font-size: 1.125rem;
     font-weight: 600;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 .cartao-texto {
     padding-bottom: 0.75rem;
     text-align: justify;
     line-height: 1.2rem;
+}
+
+.cartao-lista {
+    list-style: square;
+    padding-left: 1rem;
 }
 
 .cartao-info {
@@ -223,12 +228,58 @@ body {
     background-color: var(--cor-principal-media-sec);
 }
 
+.cartao-contato {
+    background-image: linear-gradient(var(--cor-principal-media), var(--cor-principal-clara) 50%);
+    padding: 2.5rem;
+    font-size: 1.125rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+
+.cartao-contato-titulo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--cor-principal-escura);
+    padding-bottom: 0.75rem;
+}
+
+.cartao-contato-link {
+    text-decoration: none;
+    color: var(--cor-principal-escura);
+}
+
+.cartao-contato-botao {
+    border: 2px solid var(--cor-principal-escura);
+    margin: 0.5rem 0;
+    padding: 1rem;
+    color: var(--cor-principal-escura);
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+}
+
+.cartao-contato-botao:hover {
+    background-color: var(--cor-principal-escura);
+    color: var(--cor-principal-clara)
+}
+
 .embreve {
     background-color: var(--cor-neutra-media);
     color: var(--cor-neutra-clara);
     font-size: 0.75rem;
     padding: 0.25rem;
     border-radius: 0.25rem;
+}
+
+.emandamento {
+    background-color: var(--cor-principal-media);
+    color: var(--cor-neutra-clara);
+    font-size: 0.75rem;
+    padding: 0.2rem;
+    border-radius: 0.125rem;
 }
 
 .rodape {
@@ -239,4 +290,14 @@ body {
     margin-left: 1rem;
     margin-right: 1rem;
     padding: 1rem;
+    color: var(--cor-principal-clara);
+}
+
+.rodape-data {
+    font-weight: 300;
+}
+
+.rodape-desenvolvedor {
+    font-size: 1.125rem;
+    padding-bottom: 0.5rem;
 }
