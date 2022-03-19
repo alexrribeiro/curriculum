@@ -143,7 +143,9 @@ body {
 .secao-inicio-imagem {
     width: 360px;
     height: 360px;
-    background-color: lime;
+    /* background-color: lime; */
+    background-image: url(images/alexrribeiro.jfif);
+    background-size: cover;
     opacity: 50%;
     border-radius: 50%;
 }
