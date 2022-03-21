@@ -81,7 +81,7 @@ body {
     color: var(--cor-principal-clara);
     font-size: 1.125rem;
     text-decoration: none;
-    padding: 0.25rem;
+    padding: 0.25rem 0.5rem;
     border-radius: 0.25rem;
     transition: 0.5s;
 }
@@ -99,7 +99,7 @@ body {
 }
 
 #inicio {
-    background-image: linear-gradient(var(--cor-principal-media-sec), var(--cor-neutra-escura) 20%);
+    background-image: linear-gradient(var(--cor-principal-media-sec), var(--cor-principal-escura) 20%);
     display: flex;
     align-items: center;
     padding-left: 8rem;
@@ -125,6 +125,10 @@ body {
     font-weight: 600;
 }
 
+.secao-titulo-inicio {
+    color: var(--cor-principal-clara);
+}
+
 .secao-subtitulo {
     color: var(--cor-neutra-media);
     font-size: 1.25rem;
@@ -146,15 +150,16 @@ body {
     /* background-color: lime; */
     background-image: url(images/alexrribeiro.jfif);
     background-size: cover;
-    opacity: 50%;
+    /* opacity: 50%; */
     border-radius: 50%;
+    box-shadow: 0 0 0.5rem var(--cor-principal-media);
 }
 
 .secao-inicio-conteudo {
     grid-column: 2;
 }
 
-.secao-inicio-titulo {
+.titulo-principal-pagina {
     color: var(--cor-principal-media);
     font-weight: 700;
     font-size: 2rem;
@@ -235,6 +240,7 @@ body {
 .cartao-info {
     font-weight: 600;
     color: var(--cor-neutra-alternativa);
+    padding-bottom: 1rem;
 }
 
 .cartao-botao {
@@ -289,6 +295,36 @@ body {
 .cartao-contato-botao:hover {
     background-color: var(--cor-principal-escura);
     color: var(--cor-principal-clara)
+}
+
+.cartao-destaque {
+    background-color: var(--cor-principal-escura);
+    grid-row: span 2;
+}
+
+.cartao-destaque ul li {
+    color: var(--cor-neutra-clara)
+}
+
+.cartao-destaque-titulo {
+    color: var(--cor-principal-clara);
+    padding-top: 1rem;
+}
+
+.cartao-destaque-titulo:first-child {
+    padding-top: 0;
+}
+
+.cartao-alternativo {
+    background-color: var(--cor-principal-clara);
+}
+
+.cartao-titulo-alternativo {
+    color: var(--cor-principal-escura);
+}
+
+.cartao-subtitulo-alternativo {
+    color: var(--cor-neutra-alternativa)
 }
 
 .embreve {
