@@ -77,6 +77,10 @@ body {
     display: flex;
 }
 
+.cabecalho-menu-item a.active {
+    background: red;
+}
+
 .cabecalho-menu-link {
     color: var(--cor-principal-clara);
     font-size: 1.125rem;
@@ -400,8 +404,12 @@ body {
     color: var(--cor-principal-escura);
     width: 3rem;
     height: 3rem;
+    border-radius: 50%;
+    display: none;
+}
+
+.botao-topo.show {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
 }
