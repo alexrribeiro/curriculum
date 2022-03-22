@@ -65,7 +65,7 @@ body {
 }
 
 .cabecalho-marca-at {
-    font-weight: 400;
+    font-weight: 300;
     color: var(--cor-principal-clara)
 }
 
@@ -171,6 +171,8 @@ body {
     line-height: 1.5rem;
     padding-bottom: 1rem;
     font-style: italic;
+    font-weight: 200;
+    font-size: 1.125rem;
 }
 
 .secao-formacao, .secao-cursos, .secao-experiencia {
@@ -243,12 +245,17 @@ body {
     padding-bottom: 1rem;
 }
 
+.cartao-exemplo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .cartao-botao {
     background-color: var(--cor-principal-media);
     color: var(--cor-neutra-clara);
     text-decoration: none;
     font-size: 1.125rem;
-    display: block;
     text-align: center;
     padding: 0.5rem;
     border-radius: 0.25rem;
@@ -259,13 +266,79 @@ body {
     background-color: var(--cor-principal-media-sec);
 }
 
+.cartao-destaque {
+    background-color: var(--cor-principal-escura);
+    border: none;
+    grid-row: span 2;
+}
+
+.cartao-destaque ul li {
+    color: var(--cor-neutra-clara)
+}
+
+.cartao-destaque-titulo {
+    color: var(--cor-principal-clara);
+    padding-top: 1rem;
+}
+
+.cartao-destaque-titulo:first-child {
+    padding-top: 0;
+}
+
+.cartao-destaque-alternativo {
+    background-color: var(--cor-principal-clara);
+}
+
+.cartao-destaque-alternativo-titulo {
+    color: var(--cor-principal-escura);
+}
+
+.cartao-destaque-alternativo-subtitulo {
+    color: var(--cor-neutra-alternativa)
+}
+
+.cartao-outras-experiencias {
+    grid-row: 2/4;
+    grid-column: 4;
+}
+
+.cartao-alternativo {
+    border: 1px solid var(--cor-neutra-alternativa);
+}
+
+.cartao-alternativo-titulo {
+    color: var(--cor-neutra-alternativa);
+}
+
+.cartao-alternativo-texto {
+    font-style: italic;
+}
+
+.embreve {
+    background-color: var(--cor-neutra-media);
+    color: var(--cor-neutra-clara);
+    font-size: 1.125rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: default;
+}
+
+.emandamento {
+    background-color: var(--cor-principal-media);
+    color: var(--cor-neutra-clara);
+    font-size: 0.75rem;
+    padding: 0.2rem;
+    border-radius: 0.125rem;
+}
+
 .cartao-contato {
     background-image: linear-gradient(var(--cor-principal-media), var(--cor-principal-clara) 50%);
     padding: 2.5rem;
     font-size: 1.125rem;
     display: flex;
     flex-flow: column wrap;
-    justify-content: space-around;
 }
 
 .cartao-contato-titulo {
@@ -295,52 +368,6 @@ body {
 .cartao-contato-botao:hover {
     background-color: var(--cor-principal-escura);
     color: var(--cor-principal-clara)
-}
-
-.cartao-destaque {
-    background-color: var(--cor-principal-escura);
-    grid-row: span 2;
-}
-
-.cartao-destaque ul li {
-    color: var(--cor-neutra-clara)
-}
-
-.cartao-destaque-titulo {
-    color: var(--cor-principal-clara);
-    padding-top: 1rem;
-}
-
-.cartao-destaque-titulo:first-child {
-    padding-top: 0;
-}
-
-.cartao-alternativo {
-    background-color: var(--cor-principal-clara);
-}
-
-.cartao-titulo-alternativo {
-    color: var(--cor-principal-escura);
-}
-
-.cartao-subtitulo-alternativo {
-    color: var(--cor-neutra-alternativa)
-}
-
-.embreve {
-    background-color: var(--cor-neutra-media);
-    color: var(--cor-neutra-clara);
-    font-size: 0.75rem;
-    padding: 0.25rem;
-    border-radius: 0.25rem;
-}
-
-.emandamento {
-    background-color: var(--cor-principal-media);
-    color: var(--cor-neutra-clara);
-    font-size: 0.75rem;
-    padding: 0.2rem;
-    border-radius: 0.125rem;
 }
 
 .rodape {
