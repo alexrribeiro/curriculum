@@ -1,5 +1,6 @@
 :root {
     --cor-principal-escura: #103D4F;
+    --cor-principal-escura-sec: #16556E;
     --cor-principal-media: #29A0CF;
     --cor-principal-media-sec: #207A9E;
     --cor-principal-clara: #B0D8E8;
@@ -77,10 +78,6 @@ body {
     display: flex;
 }
 
-.cabecalho-menu-item a.active {
-    background: red;
-}
-
 .cabecalho-menu-link {
     color: var(--cor-principal-clara);
     font-size: 1.125rem;
@@ -91,8 +88,17 @@ body {
 }
 
 .cabecalho-menu-link:hover {
-    color: var(--cor-principal-media);
     background-color: var(--cor-principal-escura);
+    color: var(--cor-principal-media);
+}
+
+nav ul li a.ativo {
+    background-color: var(--cor-principal-escura);
+    color: var(--cor-neutra-clara);
+}
+
+.cabecalho-menu-link i {
+    font-size: 1rem;
 }
 
 .secao {
@@ -126,7 +132,12 @@ body {
     font-size: 1.5rem;
     padding-top: 1rem;
     padding-bottom: 0.75rem;
-    font-weight: 600;
+    font-weight: 700;
+}
+
+.secao-titulo i {
+    color: var(--cor-principal-media);
+    font-size: 1.25rem;
 }
 
 .secao-titulo-inicio {
@@ -167,12 +178,13 @@ body {
     color: var(--cor-principal-media);
     font-weight: 700;
     font-size: 2rem;
+    line-height: 2.5rem;
     padding-bottom: 1.5rem;
 }
 
 .secao-inicio-texto {
     color: var(--cor-neutra-clara);
-    line-height: 1.5rem;
+    line-height: 1.75rem;
     padding-bottom: 1rem;
     font-style: italic;
     font-weight: 200;
@@ -205,22 +217,28 @@ body {
     grid-column: span 4;
 }
 
+.secao-subtitulo i {
+    font-size: 1rem;
+}
+
 .secao-descricao {
     font-size: 1.125rem;
     font-weight: 300;
     font-style: italic;
     line-height: 1.5rem;
+    color: var(--cor-neutra-escura);
 }
 
 .cartao {
-    border: 1px solid var(--cor-principal-media);
+    border: 1px solid var(--cor-principal-escura-sec);
     border-radius: 0.4rem;
     padding: 0.75rem;
 }
 
 .cartao-titulo {
-    color: var(--cor-principal-media);
+    color: var(--cor-principal-escura-sec);
     font-size: 1.25rem;
+    line-height: 1.75rem;
     font-weight: 600;
     padding-bottom: 0.75rem;
 }
@@ -228,14 +246,15 @@ body {
 .cartao-subtitulo {
     color: var(--cor-neutra-media);
     font-size: 1.125rem;
+    line-height: 1.5rem;
     font-weight: 600;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.75rem;
 }
 
 .cartao-texto {
     padding-bottom: 0.75rem;
-    text-align: justify;
-    line-height: 1.2rem;
+    /* text-align: justify; */
+    line-height: 1.35rem;
 }
 
 .cartao-lista {
@@ -243,10 +262,15 @@ body {
     padding-left: 1rem;
 }
 
+.cartao-lista li {
+    padding-bottom: 0.25rem;
+}
+
 .cartao-info {
     font-weight: 600;
     color: var(--cor-neutra-alternativa);
     padding-bottom: 1rem;
+    line-height: 1.35rem;
 }
 
 .cartao-exemplo {
@@ -261,7 +285,7 @@ body {
     text-decoration: none;
     font-size: 1.125rem;
     text-align: center;
-    padding: 0.5rem;
+    padding: 0.75rem;
     border-radius: 0.25rem;
     transition: 0.5s;
 }
@@ -325,7 +349,7 @@ body {
     border-radius: 0.25rem;
     text-decoration: none;
     text-align: center;
-    padding: 0.5rem;
+    padding: 0.75rem;
     cursor: default;
 }
 
@@ -346,10 +370,11 @@ body {
 }
 
 .cartao-contato-titulo {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
     font-weight: 700;
     color: var(--cor-principal-escura);
     padding-bottom: 0.75rem;
+    text-align: center;
 }
 
 .cartao-contato-link {
@@ -360,7 +385,7 @@ body {
 .cartao-contato-botao {
     border: 2px solid var(--cor-principal-escura);
     margin: 0.5rem 0;
-    padding: 1rem;
+    padding: 0.75rem;
     color: var(--cor-principal-escura);
     font-weight: 600;
     text-decoration: none;
@@ -372,6 +397,20 @@ body {
 .cartao-contato-botao:hover {
     background-color: var(--cor-principal-escura);
     color: var(--cor-principal-clara)
+}
+
+.address-conteudo {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+address i {
+    font-size: 1.75rem;
+    color: var(--cor-principal-escura);
+    margin: 0.75rem;
 }
 
 .rodape {
@@ -395,13 +434,13 @@ body {
 }
 
 .botao-topo {
-    font-size: 2.5rem;
+    font-size: 2rem;
     position: fixed;
     bottom: 1rem;
     right: 1rem;
     text-decoration: none;
-    background-color: var(--cor-principal-media);
-    color: var(--cor-principal-escura);
+    background-color: var(--cor-principal-escura-sec);
+    color: var(--cor-principal-clara);
     width: 3rem;
     height: 3rem;
     border-radius: 50%;

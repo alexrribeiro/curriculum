@@ -32,15 +32,11 @@ function ativarMenuSecaoAtual() {
         const checkpointStart = checkpoint >= sectionTop;
         const checkpointEnd = checkpoint <= sectionTop + sectionHeight;
 
-        // if (checkpointStart && checkpointEnd) {
-        //     document
-        //         .querySelector('nav ul li a[href*=' + sectionId + ']')
-        //         .classList.add('active');
-        // } else {
-        //     document
-        //         .querySelector('nav ul li a[href*=' + sectionId + ']')
-        //         .classList.remove('active');
-        // }
+        if (checkpointStart && checkpointEnd) {
+            document.querySelector('nav ul li a[href*=' + sectionId + ']').classList.add('ativo');
+        } else {
+            document.querySelector('nav ul li a[href*=' + sectionId + ']').classList.remove('ativo');
+        }
     }
 }
 
