@@ -1,284 +1,389 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@alexrribeiro - Dev Front End</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Alex R. Ribeiro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Source+Sans+Pro:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icomoon/style.css">
 </head>
+
 <body>
-    <header>
-            <nav class="container">
-                <h1 class="brand"><a href="#inicio">@alexrribeiro</a></h1>
-                <ul class="menu">
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#formacao">Formação</a></li>
-                    <li><a href="#cursos">Cursos</a></li>
-                    <li><a href="#experiencia">Experiência</a></li>
-                    <li><a href="#exemplos">Exemplos</a></li>
-                    <li><a href="#contato">Encontre-me</a></li>
+    <header class="cabecalho">
+        <div class="cabecalho-conteudo">
+            <h2 class="cabecalho-marca">
+                <a href="#" class="cabecalho-marca-link"><span class="cabecalho-marca-at">@</span>alexrribeiro</a>
+            </h2>
+            <nav class="cabecalho-menu">
+                <ul class="cabecalho-menu-lista">
+                    <li class="cabecalho-menu-item">
+                        <a href="#inicio" class="cabecalho-menu-link ativo"><i class="icon-home"></i> Início</a>
+                    </li>
+                    <li class="cabecalho-menu-item">
+                        <a href="#formacao" class="cabecalho-menu-link"><i class="icon-graduation-cap"></i> Formação</a>
+                    </li>
+                    <li class="cabecalho-menu-item">
+                        <a href="#cursos" class="cabecalho-menu-link"><i class="icon-code"></i> Cursos</a>
+                    </li>
+                    <li class="cabecalho-menu-item">
+                        <a href="#experiencia" class="cabecalho-menu-link"><i class="icon-briefcase1"></i> Experiência</a>
+                    </li>
+                    <li class="cabecalho-menu-item">
+                        <a href="#exemplos" class="cabecalho-menu-link"><i class="icon-globe"></i> Exemplos</a>
+                    </li>
+                    <li class="cabecalho-menu-item">
+                        <a href="#contato" class="cabecalho-menu-link"><i class="icon-send"></i> Encontre-me</a>
+                    </li>
                 </ul>
             </nav>
+        </div>
     </header>
     <main>
-        <div class="container">
-            <section class="item-conteudo" id="inicio">
-                    <img src="images/fundo-inicio.jpg" class="fundo-inicio" alt="Tela com print de código no fundo da página" longdesc="Autor da imagem: Lawrence Monk. Disponível no Pixabay.">
-                    <h1 class="titulo">Sobre mim</h1>
-                    <div class="conteudo-inicio">
-                        <div class="esquerda">
-                            <img src="images/me.jpg" alt="Foto de Alex Ramos Ribeiro" class="mim">
-                        </div>
-                        <div class="direita">
-                            <h2 class="sobre">29 anos, desenvolvedor front-end, residente em Pindamonhangaba/SP. Atualmente trabalhando como Instrutor de Informática e estudando front-end, revisando conhecimentos antigos e adquirindo novos.</h2>
-                            <p class="sobre">Busco uma oportunidade de trabalhar na área de desenvolvimento e crescer profissionalmente, além de ajudar no crescimento da empresa, preferencialmente em front-end, mas também posso trabalhar como desenvolvedor full-stack.</p>
-                            <p class="sobre">Ao longo desta página você conhecerá um pouco mais do meu currículo, minha formação acadêmica, experiências profissionais e cursos realizados.</p>
-                            <p class="sobre"><span class="strong">Seja bem-vindo(a)!</span></p>
-                        </div>
-                    </div>
-            </section>
-            <section class="item-conteudo" id="formacao">
-                <h2 class="titulo">Formação</h2>
-                <ul class="lista-complexa">
-                    <li>
-                        <p class="detalhe">Pós Graduação</p>
-                        <h3 class="nome">Desenvolvimento de Sistemas Web e Mobile</h3>
-                        <p class="descricao periodo">
-                            Realizado entre março de 2017 e maio de 2019 no Centro Universitário Salesiano de São Paulo (Lorena/SP).
-                        </p>
-                        <p class="descricao">
-                            Aprendizagem com tecnologias e frameworks como Laravel, Bootstrap, React, Node.js, Angular e Ionic, MongoDB, além do uso de APIs.
-                        </p>
-                    </li>
-                    <li>
-                        <p class="detalhe">Graduação</p>
-                        <h3 class="nome">Ciência da Computação</h3>
-                        <p class="descricao periodo">
-                            Realizado entre janeiro de 2011 e dezembro de 2014 no Centro Universitário Salesiano de São Paulo (Lorena/SP).
-                        </p>
-                        <p class="descricao">
-                            Aprendizagem de Orientação a Objeto utilizando predominantemente a linguagem de programação Java. O principal trabalho realizado por mim foi uma plataforma para encontrar custos ou tempo de viagem menor em serviços de transporte de passageiros.
-                        </p>
-                    </li>
-                    <li>
-                        <p class="detalhe">Curso Técnico</p>
-                        <h3 class="nome">Informática</h3>
-                        <p class="descricao periodo">
-                            Realizado entre julho de 2009 e dezembro de 2010 na Etec "João Gomes de Araujo" - Centro Paula Souza (Pindamonhangaba/SP).
-                        </p>
-                        <p class="descricao">
-                            Aprendizagem do básico de Programação, utilizando linguagens como C, Java, PHP e trabalhando também com Delphi e Visual Basic, além de noções de Banco de Dados e Sistemas Operacionais.
-                        </p>
-                    </li>
-                </ul>
-            </section>
-            <section class="item-conteudo" id="cursos">
-                <h2 class="titulo">Cursos realizados</h2>
-                <ul class="lista-complexa">
-                    <li>
-                        <p class="detalhe">Alura Cursos</p>
-                        <h3 class="nome">Formação em Desenvolvimento Front-End</h3>
-                        <p class="descricao">
-                            Cursos de:
-                            <ul class="lista-cursos">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>JavaScript Orientado a Objeto</li>
-                                <li>Acessibilidade Web</li>
-                            </ul>
-                            Observação: Curso em andamento.
-                        </p>
-                    </li>
-                    <li>
-                        <p class="detalhe">Digital Innovation One</p>
-                        <h3 class="nome">Cursos Diversos</h3>
-                        <p class="descricao">
-                            Cursos de:
-                            <ul class="lista-cursos">
-                                <li>Linux</li>
-                                <li>ShellScript</li>
-                                <li>.net e C#</li>
-                                <li>Spring Boot</li>
-                                <li>Scrum</li>
-                            </ul>
-                        </p>
-                    </li>
-                    <li>
-                        <p class="detalhe">Microcamp</p>
-                        <h3 class="nome">Web Design Developer</h3>
-                        <p class="descricao">
-                            Cursos de:
-                            <ul class="lista-cursos">
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>PHP</li>
-                                <li>MySQL</li>
-                                <li>ASP</li>
-                                <li>CorelDraw</li>
-                                <li>Photoshop</li>
-                                <li>Fireworks</li>
-                                <li>Dreamweaver</li>
-                            </ul>
-                        </p>
-                    </li>
-                    <li>
-                        <p class="detalhe">Microcamp</p>
-                        <h3 class="nome">Informática Básica - Ambiente Windows</h3>
-                        <p class="descricao">
-                            Cursos de:
-                            <ul class="lista-cursos">
-                                <li>Windows</li>
-                                <li>Internet</li>
-                                <li>Word</li>
-                                <li>Excel</li>
-                                <li>PowerPoint</li>
-                                <li>Access</li>
-                                <li>Outlook</li>
-                            </ul>
-                        </p>
-                    </li>
-                </ul>
-            </section>
-            <section class="item-conteudo" id="experiencia">
-                <h2 class="titulo">Experiência profissional</h2>
-                <ul class="lista-complexa">
-                    <li>
-                        <p class="detalhe">Prefeitura Municipal de Roseira/SP</p>
-                        <h3 class="nome">Instrutor de Informática</h3>
-                        <p class="descricao periodo">
-                            De novembro de 2019 até hoje
-                        </p>
-                        <p class="descricao">
-                            Atendimento a população e escolas em dúvidas e solução de problemas.
-                        </p>
-                    </li>
-                    <li>
-                        <p class="detalhe">Escola Pratike.Com Cursos Profissionalizantes</p>
-                        <h3 class="nome">Instrutor de Informática</h3>
-                        <p class="descricao periodo">
-                            De maio de 2012 até junho de 2016, aulas eventuais entre julho de 2016 e setembro de 2021 e aulas regulares de outubro de 2021 até hoje
-                        </p>
-                        <p class="descricao">
-                            Ministrando aulas de Windows, Internet, Word, Excel, PowerPoint, Access, CorelDraw, Photoshop, Flash, HTML, CSS, framework Bootstrap, JavaScript, Dreamweaver, PHP, MySQL e AutoCAD 2D.
-                        </p>
-                        <p class="descricao">
-                            Desenvolvimento do material didático dos cursos de Web Design e Desenvolvimento Web.
-                        </p>
-                    </li>
-                    <li>
-                        <p class="detalhe">Zoom Cursos Profissionalizantes</p>
-                        <h3 class="nome">Instrutor de Informática</h3>
-                        <p class="descricao periodo">
-                            De junho de 2011 até abril de 2012
-                        </p>
-                        <p class="descricao">
-                            Ministrando aulas de Windows, Internet, Word, Excel, PowerPoint, Publisher CorelDraw, Photoshop, Flash, HTML, Dreamweaver e InDesign.
-                        </p>
-                    </li>
-                    <li>
-                        <p class="detalhe">Microcamp Pindamonhangaba</p>
-                        <h3 class="nome">Instrutor de Informática</h3>
-                        <p class="descricao periodo">
-                            De junho de 2011 até abril de 2012
-                        </p>
-                        <p class="descricao">
-                            Ministrando aulas de Windows, Internet, Word, Excel, PowerPoint, Access, além de aulas eventuais dos cursos de Informática Básica e Web Design Developer.
-                        </p>
-                    </li>
-                </ul>
-            </section>
-            <section class="item-conteudo" id="exemplos">
-                <h2 class="titulo">Exemplos de trabalhos realizados</h2>
-                <p class="sobre">Nesta seção você pode conferir links para trabalhos realizados, seja projetos pessoais, seja projetos desenvolvidos em cursos:</p>
-                <ul class="lista-complexa">
-                    <li>
-                        <p class="detalhe">Projetos para aulas dos cursos da Escola Pratike.Com</p>
-                        <p class="descricao">
-                            Projeto para aulas de HTML e CSS que mostra exemplos de aplicação dos recursos que podemos utilizar em páginas, como imagens, formulários, tabelas, áudio e vídeo. Em breve colocarei design responsivo nas páginas e consertarei alguns bugs identificados.<br><a href="https://alexrribeiro.github.io/aulas-html-css/index.html" class="link-externo" target="_blank">Clique aqui para acessar</a>
-                        </p>
-                        <p class="descricao">
-                            Projeto para as aulas de HTML e CSS utilizando o framework Bootstrap para formatar os elementos, inserir alguns elementos disponíveis como toggle menu ou carrossel, organizar o layout e trabalhar o design responsivo. Em breve consertarei alguns detalhes de conteúdo.<br><a href="https://alexrribeiro.github.io/aulas-bs/" class="link-externo" target="_blank">Clique aqui para acessar</a>
-                        </p>
-                        <p class="descricao">
-                            Exemplos dos exercícios das aulas de JavaScript, em que são abordadas funções, estruturas de decisão e repetição, arrays entre outros.<br><span class="link-externo">Ainda em desenvolvimento. Link por enquanto indisponível.</span>
-                        </p>
-                    </li>
-                    <li>
-                        <p class="detalhe">Projetos desenvolvidos nos cursos que eu fiz</p>
-                        <p class="descricao">
-                            Formação Front End da Alura - Curso de HTML e CSS, básico de HTML e CSS e design responsivo. Página com o projeto desenvolvido durante as aulas e algumas adaptações feitas depois no layout e na parte responsiva por mim. <br><a href="https://alexrribeiro.github.io/barbearia-alura/" class="link-externo" target="_blank">Clique aqui para acessar</a>
-                        </p>
-                        <p class="descricao">
-                            Projeto desenvolvido na Semana Spring React da DevSuperior, com o front-end feito utilizando o React e o back-end utilizando o Spring Boot, onde também aprendi como trabalhar com gráficos em uma página Web.<br><a href="https://dsvendas-alexrribeiro.netlify.app/" class="link-externo" target="_blank">Clique aqui para acessar</a>
-                        </p>
-                        <p class="descricao">
-                            Projeto com HTML, CSS e JavaScript desenvolvido na NLW da Rocketseat. Página com várias seções de um projeto desenvolvido de acordo com as instruções da formação e com algumas adaptações de conteúdo feitas por mim.<br><a href="https://alexrribeiro.github.io/origin/" class="link-externo" target="_blank">Clique aqui para acessar</a>
-                        </p>
-                    </li>
-                    <li>
-                        <p class="detalhe">Outros projetos realizados</p>
-                        <p class="descricao">
-                            Gerador de números de loterias em JavaScript: projeto em que o usuário ao selecionar a loteria que deseja entre as disponíveis no Brasil recebe números aleatórios como sugestão para aposta. <br><span class="link-externo">Ainda em desenvolvimento. Link por enquanto indisponível.</span>
-                        </p>
-                    </li>
-                </ul>
-            </section>
-            <section class="item-conteudo" id="contato">
-                <h2 class="titulo">Encontre-me!</h2>
-                <div class="conteudo-contato">
-                    <div class="esquerda">
-                        <ul class="como-encontrar">
-                            <li>
-                                <p class="detalhe">Whatsapp/Telegram</p>
-                                <p>(12) 98101-6264</p>
-                            </li>
-                            <li>
-                                <p class="detalhe">Telefone</p>
-                                <p>(12) 3643-2593</p>
-                            </li>
-                            <li>
-                                <p class="detalhe">Celular</p>
-                                <p>(12) 98101-6264</p>
-                                <p>(12) 99230-7214</p>
-                            </li>
-                            <li>
-                                <p class="detalhe">E-mail</p>
-                                <p>alexramosribeiro@gmail.com</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="direita">
-                        <p class="texto">Se preferir, baixe meu currículo em PDF clicando no botão abaixo:</p>
-                        <a href="documents/alex-ramos-ribeiro-cv.pdf" class="botao" target="_blank">Currículo</a>
-                        <p class="texto">Você também pode ver um pouco mais do meu trabalho no Github:</p>
-                        <a href="https://github.com/alexrribeiro" class="botao" target="_blank">Veja meu Github</a>
-                    </div>
+        <section class="secao secao-desloc" id="inicio">
+            <div class="secao-inicio">
+                <div class="secao-inicio-imagem"></div>
+                <div class="secao-inicio-conteudo">
+                    <h2 class="secao-titulo secao-titulo-inicio">
+                        Olá! Seja bem-vindo(a)!
+                    </h2>
+                    <h1 class="titulo-principal-pagina">
+                        Desenvolvedor Web (Front End), pronto para novas oportunidades de trabalho.
+                    </h1>
+                    <p class="secao-inicio-texto">
+                        Tenho 30 anos e sou residente em Pindamonhangaba/SP. Desenvolvedor front-end buscando oportunidades de novos trabalhos na área, para crescer profissionalmente e também auxiliar no crescimento da empresa que me contratar.
+                    </p>
+                    <p class="secao-inicio-texto">
+                        Atualmente trabalho como Instrutor de Informática, nas áreas de Microsoft Office, Web Design, Web Developer e AutoCAD. Também estou fazendo alguns cursos voltados para o front-end a fim de relembrar conteúdos já vistos e também aprender e me atualizar em novos conteúdos.
+                    </p>
+                    <p class="secao-inicio-texto">
+                        Ao longo das seções desta página você poderá conhecer mais sobre a minha vida acadêmica, profissional, cursos e projetos realizados.
+                    </p>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+        <section class="secao" id="formacao">
+            <div class="secao-formacao">
+                <h2 class="secao-titulo"><i class="icon-graduation-cap"></i> Formação escolar e acadêmica</h2>
+                <div class="cartao">
+                    <h3 class="cartao-titulo">Pós graduação em Desenvolvimento de Sistemas Web e Mobile</h3>
+                    <p class="cartao-subtitulo">Centro Universitário Salesiano de São Paulo - Unisal</p>
+                    <p class="cartao-info">Concluído em maio de 2019</p>
+                    <p class="cartao-texto">Aprendizagem utilizando tecnologias e frameworks como Laravel, Bootstrap, React, Angular, Node.js, Ionic, MongoDB, uso de APIs, UX, e-commerce entre outros.</p>
+                </div>
+                <div class="cartao">
+                    <h3 class="cartao-titulo">Bacharelado em Ciência da Computação</h3>
+                    <p class="cartao-subtitulo">Centro Universitário Salesiano de São Paulo - Unisal</p>
+                    <p class="cartao-info">Concluído em dezembro de 2014</p>
+                    <p class="cartao-texto">Aprendizagem de Programação Orientada a Objeto, principalmente utilizando a linguagem Java, além de disciplinas em outras áreas, como Sistemas Operacionais, Bancos de Dados, Redes, Sistemas Distribuídos e Análise/Modelagem de Dados.</p>
+                    <p class="cartao-texto">Desenvolvimento de uma plataforma para encontrar menor custo ou menor tempo de viagem em serviços de transporte de passageiros.</p>
+                </div>
+                <div class="cartao">
+                    <h3 class="cartao-titulo">Técnico em Informática</h3>
+                    <p class="cartao-subtitulo">Etec "João Gomes de Araújo" - Centro Paula Souza</p>
+                    <p class="cartao-info">Concluído em dezembro de 2010</p>
+                    <p class="cartao-texto">Aprendizagem de noções de programação, com conceitos de Lógica de Programação, linguagens como C, Java, PHP, trabalhos com Delphi e Visual Basic Estrutura de Dados e Orientação a Objetos, além de noções de Análise, Banco de Dados e Redes de Computadores.</p>
+                </div>
+            </div>
+        </section>
+        <section class="secao" id="cursos">
+            <div class="secao-cursos">
+                <h2 class="secao-titulo"><i class="icon-code"></i> Cursos realizados e áreas de conhecimento</h2>
+                <div class="cartao cartao-destaque">
+                    <h3 class="cartao-titulo cartao-destaque-titulo">Áreas que mais domino atualmente</h3>
+                    <ul class="cartao-lista">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <h3 class="cartao-titulo cartao-destaque-titulo">Áreas que domino, mas estou aprimorando conhecimentos</h3>
+                    <ul class="cartao-lista">
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                        <li>Bancos de Dados SQL</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                    <h3 class="cartao-titulo cartao-destaque-titulo">Áreas que estou estudando/revisando atualmente</h3>
+                    <ul class="cartao-lista">
+                        <li>TypeScript</li>
+                    </ul>
+                    <h3 class="cartao-titulo cartao-destaque-titulo">Áreas que pretendo estudar/revisar a curto/médio prazo</h3>
+                    <ul class="cartao-lista">
+                        <li>React</li>
+                        <li>React Native</li>
+                        <li>Angular</li>
+                        <li>Vue.js</li>
+                        <li>Pré-processadores CSS</li>
+                    </ul>
+                </div>
+                <div class="cartao">
+                    <h3 class="cartao-titulo">Formação TypeScript <br><span class="emandamento">Em andamento</span></h3>
+                    <p class="cartao-subtitulo">Alura Cursos Online</p>
+                    <ul class="cartao-lista">
+                        <li>TypeScript</li>
+                    </ul>
+                </div>
+                <div class="cartao">
+                    <h3 class="cartao-titulo">Formação Front-End e HTML/CSS</h3>
+                    <p class="cartao-subtitulo">Alura Cursos Online</p>
+                    <ul class="cartao-lista">
+                        <li>HTML5 e CSS3</li>
+                        <li>Conceitos de Acessibilidade</li>
+                        <li>JavaScript</li>
+                        <li>Orientação a Objeto com JavaScript</li>
+                        <li>CSS utilizando o padrão BEM</li>
+                        <li>Responsividade, Flexbox e Grid</li>
+                        <li>Componentes</li>
+                        <li>Expressões Regulares</li>
+                        <li>Validação de Formulários</li>
+                    </ul>
+                </div>
+                <div class="cartao">
+                    <h3 class="cartao-titulo">Cursos Diversos</h3>
+                    <p class="cartao-subtitulo">Digital Innovation One</p>
+                    <ul class="cartao-lista">
+                        <li>Git e Github</li>
+                        <li>Linux</li>
+                        <li>ShellScript</li>
+                        <li>Scrum</li>
+                    </ul>
+                    <p class="cartao-info"></p>
+                </div>
+                <div class="cartao">
+                    <h3 class="cartao-titulo">Web Design Developer</h3>
+                    <p class="cartao-subtitulo">Microcamp</p>
+                    <ul class="cartao-lista">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>CorelDraw</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Fireworks</li>
+                        <li>Adobe Dreamweaver</li>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div class="cartao">
+                    <h3 class="cartao-titulo">Informática</h3>
+                    <p class="cartao-subtitulo">Microcamp</p>
+                    <ul class="cartao-lista">
+                        <li>Microsoft Windows</li>
+                        <li>Microsoft Word</li>
+                        <li>Microsoft Excel</li>
+                        <li>Microsoft PowerPoint</li>
+                        <li>Microsoft Access</li>
+                        <li>Microsoft Outlook</li>
+                    </ul>
+                </div>
+                <div class="cartao cartao-destaque-alternativo">
+                    <h3 class="cartao-titulo cartao-destaque-alternativo-titulo">Idiomas</h3>
+                    <p class="cartao-subtitulo cartao-destaque-alternativo-subtitulo">Inglês</p>
+                    <p class="cartao-info">Nível básico <span class="emandamento">Cursando</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="secao" id="experiencia">
+            <div class="secao-experiencia">
+                <h2 class="secao-titulo"><i class="icon-briefcase1"></i> Experiência profissional</h2>
+                <div class="cartao">
+                    <h3 class="cartao-titulo">Instrutor de Informática</h3>
+                    <p class="cartao-subtitulo">Prefeitura Municipal de Roseira/SP</p>
+                    <p class="cartao-info">De novembro de 2019 até hoje.</p>
+                    <p class="cartao-texto">
+                        Atendimento e suporte a população e as escolas municipais em suas dúvidas e demandas.
+                    </p>
+                </div>
+                <div class="cartao">
+                    <h3 class="cartao-titulo">Instrutor de Informática</h3>
+                    <p class="cartao-subtitulo">Pratike.Com Cursos Profissionalizantes</p>
+                    <p class="cartao-info">De maio de 2012 até junho de 2016.
+                    <br>Aulas e serviços eventuais entre junho de 2016 e setembro de 2021
+                    <br>De outubro de 2021 até hoje.</p>
+                    <p class="cartao-texto">
+                        Aulas de Windows, Internet, Word, Excel, PowerPoint, Access, CorelDraw, Photoshop, HTML, CSS, JavaScript, Dreamweaver, PHP, MySQL, AutoCAD 2D e noções de Linux.
+                    </p>
+                    <p class="cartao-texto">
+                        Atualização do material dos cursos de Informática (2022), Web Design (2021) e edição do material do curso de Desenvolvimento Web (2018).
+                    </p>
+                    <p class="cartao-texto">
+                        Atualização visual e desenvolvimento de artes gráficas (em alguns períodos entre 2012 até 2020).
+                    </p>
+                </div>
+                <div class="cartao">
+                    <h3 class="cartao-titulo">Instrutor de Informática</h3>
+                    <p class="cartao-subtitulo">Zoom Cursos de Informática</p>
+                    <p class="cartao-info">De junho de 2011 até abril de 2012.</p>
+                    <p class="cartao-texto">
+                        Aulas de Windows, Internet, Word, Excel, PowerPoint, Access, Publisher, CorelDraw, Photoshop, HTML e Dreamweaver.
+                    </p>
+                </div>
+                <div class="cartao">
+                    <h3 class="cartao-titulo">Instrutor de Informática</h3>
+                    <p class="cartao-subtitulo">Microcamp Pindamonhangaba</p>
+                    <p class="cartao-info">De agosto de 2010 até abril de 2011.</p>
+                    <p class="cartao-texto">
+                        Aulas de Windows, Internet, Word, Excel, PowerPoint, Access e CorelDraw.
+                        Aulas eventuais, além dos cursos acima, de Photoshop, Fireworks, HTML, CSS, JavaScript, PHP, MySQL.
+                    </p>
+                </div>
+                <div class="cartao">
+                    <h3 class="cartao-titulo">Monitor de Informática</h3>
+                    <p class="cartao-subtitulo">Brasil Treina Cursos Profissionalizantes</p>
+                    <p class="cartao-info">De agosto de 2010 até maio de 2011.</p>
+                    <p class="cartao-texto">
+                        Monitoria nos cursos oferecidos pela escola nas áreas de Informática, Web, AutoCAD e Rotinas Administrativas.
+                    </p>
+                </div>
+                <div class="cartao cartao-alternativo cartao-outras-experiencias">
+                    <h3 class="cartao-titulo cartao-alternativo-titulo">Outras Experiências</h3>
+                    <p class="cartao-texto cartao-alternativo-texto">Além das experiências na área de Informática, trabalhei entre junho de 2016 e novembro de 2019 como Agente de Organização Escolar (Prefeitura de Pindamonhangaba/SP).</p>
+                    <p class="cartao-texto cartao-alternativo-texto">Também, quando possível e solicitado, dou aulas particulares sobre os assuntos dos quais tenho conhecimento.</p>
+                    <p class="cartao-texto cartao-alternativo-texto">Há alguns anos, voluntariamente, faço alguns trabalhos na parte gráfica utilizando o CorelDraw (principalmente criação de cartazes/banners de eventos) para a Comunidade Aliança Jesus Agora, associação religiosa situada em Pindamonhangaba/SP.</p>
+                </div>
+            </div>
+        </section>
+        <section class="secao" id="exemplos">
+            <div class="secao-exemplos">
+                <h2 class="secao-titulo"><i class="icon-globe"></i> Exemplos de projetos</h2>
+                <p class="secao-descricao">
+                    Abaixo alguns exemplos de páginas desenvolvidas por mim para criação de um portfolio, para praticar conhecimentos ou utilizar como material para aulas, além de exemplos de projetos trabalhados em cursos feitos para atualização ou aquisição de conhecimento.
+                </p>
+                <h3 class="secao-subtitulo"><i class="icon-file-code-o"></i> Desenvolvidos por mim</h3>
+                <div class="cartao cartao-exemplo">
+                    <div class="cartao-exemplo-conteudo">
+                        <h3 class="cartao-titulo">Jogo: Pedra, Papel, Tesoura</h3>
+                        <p class="cartao-texto">Desenvolvido utilizando HTML, CSS e JavaScript, o jogador joga contra o computador, que aleatoriamente também escolhe uma das três opções, que ao serem comparadas determinam o vencedor da rodada. O jogador, no início do jogo, pode escolher até quantos pontos deseja atingir para que tenha um vencedor do desafio.</p>
+                    </div>
+                    <a href="https://alexrribeiro.github.io/pedra-papel-tesoura/" target="_blank" class="cartao-botao">Clique para acessar</a>
+                </div>
+                <div class="cartao cartao-exemplo">
+                    <div class="cartao-exemplo-conteudo">
+                        <h3 class="cartao-titulo">Atividades de JavaScript</h3>
+                        <p class="cartao-texto">Um compilado de exemplos simples para a compreensão de estruturas utilizando a linguagem JavaScript, onde se pode trabalhar com variáveis, estruturas de decisão, repetição e arrays.</p>
+                    </div>
+                    <a href="https://alexrribeiro.github.io/aulas-js/" target="_blank" class="cartao-botao">Clique para acessar</a>
+                </div>
+                <div class="cartao cartao-exemplo">
+                    <div class="cartao-exemplo-conteudo">
+                        <h3 class="cartao-titulo">Gerador de Números para Loterias</h3>
+                        <p class="cartao-texto">Utilizando a linguagem JavaScript e o conceito de arrays para gerar números aleatórios de acordo com as regras de cada loteria.</p>
+                    </div>
+                    <a href="#exemplos" class="embreve">Em breve.</a>
+                </div>
+                <div class="cartao cartao-exemplo">
+                    <div class="cartao-exemplo-conteudo">
+                        <h3 class="cartao-titulo">Recursos para Páginas Web</h3>
+                        <p class="cartao-texto">Exemplos simples de recursos que podemos inserir em páginas HTML e formatar com CSS reunidos em um projeto com algumas páginas.</p>
+                    </div>
+                    <a href="#exemplos" class="embreve">Em breve.</a>
+                </div>
+                <div class="cartao cartao-exemplo">
+                    <div class="cartao-exemplo-conteudo">
+                        <h3 class="cartao-titulo">Layouts de Formulário</h3>
+                        <p class="cartao-texto">Alguns formulários estilizados criados para treinar estruturação de formulários e formatação via CSS, além de validação de CPF e busca de CEP por JavaScript.</p>
+                    </div>
+                    <a href="#exemplos" class="embreve">Em breve.</a>
+                </div>
+                <div class="cartao cartao-exemplo">
+                    <div class="cartao-exemplo-conteudo">
+                        <h3 class="cartao-titulo">"Eletroshop"</h3>
+                        <p class="cartao-texto">Exemplo de aplicação de recursos das linguagens HTML e CSS, além da adaptação para dispositivos móveis, desenvolvido para utilização nos cursos de HTML/CSS.</p>
+                    </div>
+                    <a href="#exemplos" class="embreve">Em breve.</a>
+                </div>
+                <div class="cartao cartao-exemplo">
+                    <div class="cartao-exemplo-conteudo">
+                        <h3 class="cartao-titulo">"Technoschool"</h3>
+                        <p class="cartao-texto">Exemplo de projeto utilizando o framework Bootstrap para organizar e formatar a estrutura da página, desenvolvido para utilização nos cursos de Bootstrap.</p>
+                    </div>
+                    <a href="#exemplos" class="embreve">Em breve.</a>
+                </div>
+                <h3 class="secao-subtitulo"><i class="icon-file-code-o"></i> Desenvolvidos em cursos e imersões realizadas</h3>
+                <div class="cartao cartao-exemplo">
+                    <div class="cartao-exemplo-conteudo">
+                        <h3 class="cartao-titulo">Aluracord</h3>
+                        <p class="cartao-texto">Projeto desenvolvido na Imersão React da Alura, utilizando o framework NextJS e banco de dados na plataforma Supabase. Estrutura do projeto seguindo as instruções do curso e algumas adaptações.</p>
+                    </div>
+                    <a href="https://projeto-aluracord-nine.vercel.app/" target="_blank" class="cartao-botao">Clique para acessar</a>
+                </div>
+                <div class="cartao cartao-exemplo">
+                    <div class="cartao-exemplo-conteudo">
+                        <h3 class="cartao-titulo">Barbearia Alura</h3>
+                        <p class="cartao-texto">Projeto do curso de HTML e CSS básico da Alura. Página com o projeto desenvolvido durante as aulas seguindo as orientações e algumas adaptações feitas no layout e na parte responsiva.</p>
+                    </div>
+                    <a href="https://alexrribeiro.github.io/barbearia-alura/" target="_blank" class="cartao-botao">Clique para acessar</a>
+                </div>
+                <div class="cartao cartao-exemplo">
+                    <div class="cartao-exemplo-conteudo">
+                        <h3 class="cartao-titulo">DSVendas</h3>
+                        <p class="cartao-texto">Projeto desenvolvido no evento Semana Spring React da DevSuperior, com o front-end feito utilizando React e o back-end utilizando o Spring Boot. Também no evento aprendi a trabalhar com gráficos em uma página Web.</p>
+                    </div>
+                    <a href="https://dsvendas-alexrribeiro.netlify.app/" target="_blank" class="cartao-botao">Clique para acessar</a>
+                </div>
+                <div class="cartao cartao-exemplo">
+                    <div class="cartao-exemplo-conteudo">
+                        <div class="cartao-titulo">FlexComputing</div>
+                        <p class="cartao-texto">Projeto com HTML, CSS e JavaScript desenvolvido na NLW da Rocketseat. Página com váraias seções de um projeto desenvolvido de acordo com as instruções da formação (a partir de um layout desenvolvido no Figma e aplicando conceitos de adaptação a diferentes telas) e com adaptações de conteúdo feitas por mim.</p>
+                    </div>
+                    <a href="https://alexrribeiro.github.io/origin/" target="_blank" class="cartao-botao">Clique para acessar</a>
+                </div>
+            </div>
+        </section>
+        <section class="secao" id="contato">
+            <div class="secao-contato">
+                <h3 class="secao-titulo"><i class="icon-send"></i> Entre em contato!</h3>
+                <div class="cartao-contato">
+                    <h3 class="cartao-contato-titulo">Informações de Contato</h3>
+                    <address>
+                        <div class="address-conteudo">
+                            <i class="icon-phone"> </i> <a href="tel:+5512981016264" class="cartao-contato-link">(12) 98101-6264</a>
+                        </div>
+                        <div class="address-conteudo">
+                            <i class="icon-mobile1"> </i><a href="tel:+551236432593" class="cartao-contato-link">(12) 3643-2593</a>
+                        </div>
+                        <div class="address-conteudo">
+                            <i class="icon-whatsapp"> </i> <a href="https://api.whatsapp.com/send?phone=+5512981016264&text=Olá! Gostaria de mais informações." target="_blank" class="cartao-contato-link">(12) 98101-6264</a>
+                        </div>
+                        <div class="address-conteudo">
+                            <i class="icon-telegram"> </i> <a href="#contato" target="_blank" class="cartao-contato-link">(12) 98101-6264</a>
+                        </div>
+                        <div class="address-conteudo">
+                            <i class="icon-envelope-o"> </i> <a href="mailto: alexramosribeiro@gmail.com" class="cartao-contato-link">alexramosribeiro@gmail.com</a>
+                        </div>
+                    </address>
+                </div>
+                <div class="cartao-contato">
+                    <h3 class="cartao-contato-titulo">Links e Currículo em PDF</h3>
+                    <a href="http://www.github.com/alexrribeiro" target="_blank" class="cartao-contato-botao"><i class="icon-github"></i> Meu Repositório Github</a>
+                    <a href="documents/alex-ramos-ribeiro.pdf" target="_blank" class="cartao-contato-botao"><i class="icon-file-pdf-o"></i> Meu currículo em PDF</a>
+                    <a href="documents/alex-ramos-ribeiro.pdf" target="_blank" class="cartao-contato-botao" download><i class="icon-download"></i> Meu currículo em PDF (download)</a>
+                </div>
+                <div class="cartao-contato">
+                    <h3 class="cartao-contato-titulo">Redes Sociais</h3>
+                    <a href="http://linkedin.com/in/alexrribeiro" target="_blank" class="cartao-contato-botao"><i class="icon-linkedin-square"></i> Perfil no LinkedIn</a>
+                    <a href="http://facebook.com/alexramosribeiro" class="cartao-contato-botao"><i class="icon-facebook-square"></i> Perfil no Facebook</a>
+                    <a href="http://instagram.com/alex.ramos.ribeiro" class="cartao-contato-botao"><i class="icon-instagram"></i> Perfil no Instagram</a>
+                    <a href="http://twitter.com/alexrribeiro" target="_blank" class="cartao-contato-botao"><i class="icon-twitter"></i> Perfil no Twitter</a>
+                </div>
+            </div>
+        </section>
+        <a href="#" class="botao-topo"><i class="icon-circle-up"></i></a>
     </main>
-    <footer>
-        <div class="container-footer">
-            <section class="copyright">
-                <p>&copy;2021 | Alex Ramos Ribeiro</p>
-                <p>Última atualização de conteúdo desta página: 16/12/2021</p>
-            </section>
-            <section class="redes">
-                <ul class="redes-sociais">
-                    <li><a href="https://facebook.com/alexramosribeiro" target="_blank">Facebook</a></li>
-                    <li><a href="https://instagram.com/alex.ramos.ribeiro" target="_blank">Instagram</a></li>
-                    <li><a href="https://twitter.com/alexrribeiro" target="_blank">Twitter</a></li>
-                    <li><a href="https://linkedin.com/in/alexrribeiro" target="_blank">LinkedIn</a></li>
-                </ul>
-            </section>
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <p class="rodape-desenvolvedor">
+                <span class="rodape-data">&copy; <script>javascript: document.write(new Date().getFullYear());</script> |</span>
+                Alex Ramos Ribeiro
+            </p>
+            <p class="rodape-atualizacao">Data da última atualização: <span class="rodape-data">23/03/2022</span></p>
         </div>
     </footer>
+    <script src="main.js" type="text/javascript"></script>
 </body>
+
 </html>
