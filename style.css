@@ -389,7 +389,7 @@ nav ul li a.ativo {
 address i {
     font-size: 1.75rem;
     color: var(--cor-principal-escura);
-    margin: 0.75rem;
+    margin-right: 0.75rem;
 }
 
 .rodape {
@@ -484,6 +484,11 @@ address i {
         grid-column: span 2;
     }
 
+    .cartao-idiomas {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
     #contato-informacoes {
         grid-column: span 2;
         grid-row: 2;
@@ -497,5 +502,122 @@ address i {
     #contato-redes {
         grid-column: 2;
         grid-row: 3;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalho-menu {
+        display: none; /* Só pra fazer um teste aqui */
+    }
+
+    .secao-inicio {
+        grid-template-columns: 260px auto;
+        gap: 1.5rem;
+    }
+
+    .secao-inicio-imagem {
+        width: 260px;
+        height: 260px;
+    }
+
+    .secao-formacao, .secao-cursos, .secao-experiencia, .secao-exemplos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 0.5rem;
+    }
+
+    .secao-titulo {
+        grid-column: span 2;
+    }
+
+    .cartao-outras-experiencias {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    .secao-descricao {
+        grid-column: span 2;
+    }
+
+    .secao-subtitulo {
+        grid-column: span 2;
+    }
+
+    .cartao-idiomas {
+        grid-column: 2;
+        grid-row: 5;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .secao-inicio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secao-formacao, .secao-cursos, .secao-experiencia, .secao-exemplos, .secao-contato {
+        grid-template-columns: 1fr;
+        /* grid-template-rows: repeat(3, auto); */
+        gap: 0.5rem;
+    }
+
+    .secao-titulo, .secao-descricao, .secao-subtitulo {
+        grid-column: 1;
+    }
+
+    .cartao-idiomas {
+        grid-column: 1;
+        grid-row: 9;
+    }
+
+    .cartao-outras-experiencias {
+        grid-column: 1;
+        grid-row: 7;
+    }
+
+    .cartao-contato {
+        padding: 2.5rem 0;
+        font-size: 1.125rem;
+        background-image: none;
+    }
+
+    .cartao-contato-link {
+        font-size: 1.125rem;
+    }
+
+    #contato-informacoes {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #contato-links {
+        grid-row: 3;
+    }
+
+    #contato-redes {
+        grid-column: 1;
+        grid-row: 4;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .cabecalho-conteudo {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .secao {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    #contato {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .rodape-conteudo {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
 }
