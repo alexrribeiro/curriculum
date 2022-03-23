@@ -34,17 +34,6 @@ body {
     z-index: 2;
 }
 
-/* .cabecalho-inicio {
-    position: static;
-}
-
-.cabecalho-fixo {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 2;
-} */
-
 .cabecalho-conteudo {
     display: flex;
     justify-content: space-between;
@@ -69,10 +58,6 @@ body {
     font-weight: 300;
     color: var(--cor-principal-clara)
 }
-
-/* .cabecalho-menu {
-    padding: 1rem;
-} */
 
 .cabecalho-menu-lista {
     display: flex;
@@ -162,10 +147,8 @@ nav ul li a.ativo {
 .secao-inicio-imagem {
     width: 360px;
     height: 360px;
-    /* background-color: lime; */
     background-image: url(images/alexrribeiro.jfif);
     background-size: cover;
-    /* opacity: 50%; */
     border-radius: 50%;
     box-shadow: 0 0 0.5rem var(--cor-principal-media);
 }
@@ -191,7 +174,7 @@ nav ul li a.ativo {
     font-size: 1.125rem;
 }
 
-.secao-formacao, .secao-cursos, .secao-experiencia {
+.secao-formacao, .secao-cursos, .secao-experiencia, .secao-exemplos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, auto);
@@ -199,10 +182,7 @@ nav ul li a.ativo {
 }
 
 .secao-exemplos {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, auto);
-    gap: 0.5rem;
 }
 
 .secao-contato {
@@ -253,7 +233,6 @@ nav ul li a.ativo {
 
 .cartao-texto {
     padding-bottom: 0.75rem;
-    /* text-align: justify; */
     line-height: 1.35rem;
 }
 
@@ -451,4 +430,72 @@ address i {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .cabecalho-menu-link i {
+        display: none;
+    }
+
+    #inicio {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .secao-inicio {
+        grid-template-columns: 300px auto;
+        gap: 1.5rem;
+    }
+
+    .secao-inicio-imagem {
+        width: 300px;
+        height: 300px;
+    }
+
+    .secao-formacao, .secao-cursos, .secao-experiencia, .secao-exemplos {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 0.5rem;
+    }
+
+    .secao-titulo {
+        grid-column: span 3;
+    }
+
+    .cartao-outras-experiencias {
+        grid-column: 3;
+    }
+
+    .secao-descricao {
+        grid-column: span 3;
+    }
+
+    .secao-subtitulo {
+        grid-column: span 3;
+    }
+
+    .secao-contato {
+        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-rows: repeat(2, auto); */
+        gap: 1.5rem;
+    }
+
+    .secao-contato .secao-titulo {
+        grid-column: span 2;
+    }
+
+    #contato-informacoes {
+        grid-column: span 2;
+        grid-row: 2;
+    }
+
+    #contato-links {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    #contato-redes {
+        grid-column: 2;
+        grid-row: 3;
+    }
 }
