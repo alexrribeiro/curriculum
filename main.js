@@ -44,8 +44,16 @@ const botaoMenu = document.querySelector('.icon-menu');
 const menu = document.querySelector('.cabecalho-menu');
 
 botaoMenu.addEventListener('click', () => {
-  menu.classList.toggle('cabecalho-menu-ativo');
+    menu.classList.toggle('cabecalho-menu-ativo');
 });
+
+const links = document.querySelectorAll('.cabecalho-menu-link')
+
+for (const link of links) {
+  link.addEventListener('click', function () {
+    menu.classList.remove('cabecalho-menu-ativo')
+  })
+}
 
 window.addEventListener('scroll', () => {
     deslocaInicio();

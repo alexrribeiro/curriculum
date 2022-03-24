@@ -517,7 +517,7 @@ address i {
     }
 
     .cabecalho-menu {
-        display: none; /* Só pra fazer um teste aqui */
+        display: none;
     }
 
     .cabecalho-menu-ativo {
@@ -526,7 +526,8 @@ address i {
         flex-wrap: wrap;
         
         position: absolute;
-        top: 64px;
+        top: 62px;
+        right: 0;
     }
     
     .cabecalho-menu-ativo ul {
@@ -535,10 +536,7 @@ address i {
         justify-content: center;
 
         background-color: var(--cor-principal-media-sec);
-        width: calc(320px - 32px);
-        
-        position: relative;
-        right: 0;
+        width: 50vw;
     }
     
     .cabecalho-menu-ativo ul li {
@@ -590,6 +588,10 @@ address i {
 }
 
 @media screen and (max-width: 480px) {
+    .cabecalho-menu-ativo ul {
+        width: 100vw;
+    }
+
     .cabecalho-conteudo, .secao, .rodape-conteudo {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
