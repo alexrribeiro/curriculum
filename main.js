@@ -40,8 +40,15 @@ function ativarMenuSecaoAtual() {
     }
 }
 
+const botaoMenu = document.querySelector('.icon-menu');
+const menu = document.querySelector('.cabecalho-menu');
+
+botaoMenu.addEventListener('click', () => {
+  menu.classList.toggle('cabecalho-menu-ativo');
+});
+
 window.addEventListener('scroll', () => {
     deslocaInicio();
     voltarParaOTopo();
     ativarMenuSecaoAtual();
-})
+});

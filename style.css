@@ -59,6 +59,10 @@ body {
     color: var(--cor-principal-clara)
 }
 
+.icon-menu {
+    display: none;
+}
+
 .cabecalho-menu-lista {
     display: flex;
 }
@@ -433,9 +437,9 @@ address i {
 }
 
 @media screen and (max-width: 1024px) {
-    .cabecalho-menu-link i {
+    /* .cabecalho-menu-link i {
         display: none;
-    }
+    } */
 
     #inicio {
         padding-left: 2rem;
@@ -506,8 +510,44 @@ address i {
 }
 
 @media screen and (max-width: 768px) {
+    .icon-menu {
+        display: block;
+        font-size: 1.5rem;
+        color: var(--cor-principal-clara);
+    }
+
     .cabecalho-menu {
         display: none; /* Só pra fazer um teste aqui */
+    }
+
+    .cabecalho-menu-ativo {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+        position: absolute;
+        top: 64px;
+    }
+    
+    .cabecalho-menu-ativo ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        background-color: var(--cor-principal-media-sec);
+        width: calc(320px - 32px);
+        
+        position: relative;
+        right: 0;
+    }
+    
+    .cabecalho-menu-ativo ul li {
+        padding: 1.5rem 1rem;
+        text-align: center;
+    }
+
+    .cabecalho-menu-ativo ul li a, .cabecalho-menu-ativo ul li a i {
+        font-size: 1.5rem;
     }
 
     .secao-inicio {
